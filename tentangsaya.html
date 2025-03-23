@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya - Arrios Van Bougenville</title>
+    <link rel="stylesheet" href="css2.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fan-art.html">Fan Art</a></li>
+            <li><a href="social.html">Social</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Tentang Saya</h1>
+        
+        <div class="about-box">
+            <h2>Profil</h2>
+            <p><strong>Nama:</strong> Arrios Van Bougenville</p>
+            <p><strong>Tanggal Lahir:</strong> 15 Juli</p>
+            <p><strong>Umur:</strong> 19 Tahun</p>
+            <p><strong>Ras:</strong> Elf</p>
+            <p><strong>Sihir:</strong> Heal & Ilusi</p>
+            <p><strong>Hobi:</strong> Bernyanyi, Menggambar, Bermain Game, Menulis & Membuat Jiko</p>
+        </div>
+
+        <div class="about-box">
+            <h2>Lore</h2>
+            <p>
+                Aku adalah seorang mahasiswa kedokteran yang mati karena menolong korban ledakan gedung. 
+                Setelah kematianku itu entah mengapa aku reinkarnasi kembali ke dunia lain dan aku lahir kembali di keluarga bangsawan...
+            </p>
+            <button class="btn-lore" onclick="toggleLore()">Selengkapnya</button>
+            <p id="lore-full" class="hidden">
+                Aku sudah dijaga oleh dua roh sejak lahir, peninggalan turun-temurun dari keluarga Bougenville. Nama dua roh itu adalah Artbie dan Pofy, dan karenanya aku diberi nama Arrios Van Bougenville oleh orang tuaku.<br><br>
+
+                Selang waktu berlalu, aku tumbuh menjadi remaja dan seperti di kehidupanku sebelumnya, aku tetap ingin melanjutkan impianku menjadi dokter. Aku mulai meneliti dan belajar tentang sihir penyembuh. Saat aku mencari bahan untuk ramuan, aku bertemu dengan Xyn dan Oky. Kami memutuskan untuk berpetualang bersama demi mewujudkan impian kami.
+            </p>
+        </div>
+
+        <div class="about-box">
+            <h2>Model</h2>
+            <div class="model-images">
+                <img src="l2drios1.jpg" alt="Model Live2D 1">
+                <img src="l2drios2.jpg" alt="Model Live2D 2">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleLore() {
+            var loreFull = document.getElementById("lore-full");
+            var btnLore = document.querySelector(".btn-lore");
+
+            if (loreFull.classList.contains("hidden")) {
+                loreFull.classList.remove("hidden");
+                btnLore.textContent = "Tutup";
+            } else {
+                loreFull.classList.add("hidden");
+                btnLore.textContent = "Selengkapnya";
+            }
+        }
+    </script>
+
+</body>
+</html>
